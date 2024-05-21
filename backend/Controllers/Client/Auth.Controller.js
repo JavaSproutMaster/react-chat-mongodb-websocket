@@ -1009,8 +1009,8 @@ module.exports = {
   sendEmailMailchimp : async (req, res) => {
 
     var mailchimpInstance   = process.env.MAILCHIMPINSTANCE || 'us6',
-    listUniqueId        = process.env.LISTUNIQUEID || 'b6a82d89f0',
-    mailchimpApiKey     = process.env.MAILCHIMPAPIKEY || '637274b5ab272affbf7df7d3723ea2a1-us6';
+    listUniqueId        = process.env.LISTUNIQUEID,
+    mailchimpApiKey     = process.env.MAILCHIMPAPIKEY;
 
 
     const { email } = req.body;
